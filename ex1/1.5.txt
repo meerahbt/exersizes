@@ -1,0 +1,8 @@
+I'm not sure how exactly to go about this. Applicative-order would
+evaluate the expressions inwards first. And with normal-order the 
+interpreter would susbsititue the values first. 
+
+(p) will first be placed anywhere there's a y
+so
+(if (= x 0) 0 (p))
+
