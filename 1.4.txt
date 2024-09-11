@@ -1,0 +1,11 @@
+(define (a-plus-abs-b a b) 
+    ((if (> b 0) + -) a b))
+
+if b is greater than 0 then we give the value of a
+else we give the value of b (WRONG)
+
+Instead it will use the operators + - in the expression
+so if b is a +ve number the expression becomes (+ a b)
+else (- a b)
+
+it computes a + |b|
