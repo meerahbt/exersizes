@@ -4,3 +4,13 @@ What happens when Alyssa attempts to use this to compute
     (new-if (good-enough? guess x) 
     guess 
     (sqrt-iter (improve guess x) x)))
+
+new-if predicate then-clause else-clause
+
+So in this case the predicate is (sqrt-iter guess x)
+               the then-clase is (guess)
+               and the else is (sqrt-iter (improve guess x) x)
+
+This means that it will first check if the guess is 'good enough'
+if yes then it will give you the value of the guess (x), else it will
+improve the guess. 
