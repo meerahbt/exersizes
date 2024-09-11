@@ -14,3 +14,13 @@ So in this case the predicate is (sqrt-iter guess x)
 This means that it will first check if the guess is 'good enough'
 if yes then it will give you the value of the guess (x), else it will
 improve the guess. 
+
+^ my original full answer
+
+I was missing a few concepts:
+
+- The idea that each subexpression is evaluated BEFORE the 
+procedure is applied. This means that it evaluates all the fuctions of
+sqrt-iter before the new-if is applied. 
+- This will result in an infinite loop since it will recursively
+evaluate the same value of x. 
